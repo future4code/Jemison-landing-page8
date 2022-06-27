@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+/*RESETANDO PRÉ-CONFIGURAÇÕES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*    ***** CORPO DA PÁGINA*****    */
+body{
+    background-color:white;
+}
+
+/*    ***** CABEÇALHO DA PÁGINA*****    */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ff914d;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.menu > .lista1{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 30px;
+   list-style: none;
+}
+.menu > .lista1  a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+}
+
+.item-menu{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+.item-menu::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.item-menu:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#inicioHeader{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.fim-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#conta{
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.acessos{
+    color: white;
+    font-size: 1.2em;
+}
+
+.cadeado{
+    height: 35px;
+    width: 35px;
+    background-color: rgba(199, 196, 196, 0.973);
+    border: none;
+    border-radius: 5px;
+}
+
+.cadeado:hover{
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    color: white;
+}
+
+.botaoe-e-acessos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+.botao{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.2em;
+    background-color: #ff914d;
+    border: 1px solid white;
+    color: white;
+}
+.botao:hover{
+    background-color: #ffbd59;
+    color: white;
+    cursor: pointer;
+}
+
+/* ********  CONTEÚDO PRINCIPAL DA PÁGINA******    */
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+/*--- NAV COM NOME E FRASE ---*/
+.nomeEFrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+.corLaranja{
+    color: #ff914d;
+}
+
+#font{
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*--- NAV DOIS COM O BACKGROUND LARANJA ---*/
+
+.dois{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffbd59;
+    padding: 20px;
+}
+
+
+.todosCardes{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.titulo-dois{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cardesIndividuais{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px ;
+    width: 250px;
+}
+
+.cardesIndividuais:hover{
+    background-color: #ff914d;
+    transition: all 0.5s;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.material-symbols-outlined{
+    color: black;
+    padding: 5px 0 20px 0;
+}
+
+#icon{
+    font-size: 3em;
+}
+
+/*--- NAV TRES COM IMAGEM E TEXTO AO LADO ---*/
+
+.sessao-principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+    
+}
+
+.conteudo-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+
+}
+
+.tituloDois{
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.tres-dois{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.tituloTres{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lista{
+    display: block;
+    margin: 0 auto;
+    columns: 2;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+ul>li{
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+/*--- FRASE PRECISA DE AJUDA ---*/
+#tituloH2{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+/*--- IMAGENS DE AJUDA COM TEXTO ---*/
+.quatro-um{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.colunaIndividual{
+    text-align: center;
+    width: 150px;
+    height: 250px;
+}
+
+.colunaIndividual > img{
+    width: 150px;
+}
+
+div.colunaIndividual:hover{
+   
+   transform: scale(120%);
+   transition: all 0.5s;
+}
+
+
+/*      ****** ÁREA DO RODAPÉ DA PÁGINA *******   */
+footer{
+    display: flex;
+     background-color: #ff914d;
+     text-align: center;
+     justify-content: space-between;
+     color: white;
+     padding: 0px 40px 0px 40px;
+}
+
+.foto{
+    display: flex;
+    height: 75px;
+    width: 75px; 
+}
+
+.rede{
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 25%; 
+}
+
+p{
+    margin-top: 6%;
+}
+
+.icones{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icones1 > a{
+    margin-right: 10px;
+}
+
+.fa-brands {
+    color: white;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    .fim-header{
+        display: none;
+    }
+
+    .menu .lista1 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0;
+        z-index: 1000;
+        height: 0px;
+        transition: .7s;
+        background: #ffbd59;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .menu .lista1 a{
+        color: black;
+        padding: 1rem 1rem 1rem 0;
+        
+    }
+
+    #inicioHeader.active .lista1{
+        height: calc(100vh - 90px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.6rem;
+        color: white;
+    }
+
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 1s;
+        position: relative;
+
+    }
+    #inicioHeader.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #inicioHeader.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #inicioHeader.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    .lista1{
+        font-size: 13px;
+        gap: 20px;
+    }
+
+    .logo-e-menu{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        
+    }
+
+    .sessao-principal{
+        align-items: center;
+    }
+    .lista{
+        columns: 1;
+    }
+
+    div.colunaIndividual{
+        width: 100%;
+    }
+
+    .logo-banco > img{
+        width: 100%;
+    }
+    footer{
+        gap: 20px;
+    }
+
+
+}
